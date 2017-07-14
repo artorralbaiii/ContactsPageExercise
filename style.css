@@ -1,0 +1,21 @@
+input.search::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-family: 'FontAwesome';
+}
+input.search:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-family: 'FontAwesome';
+   opacity:  1;
+}
+input.search::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-family: 'FontAwesome';
+   opacity:  1;
+}
+input.search:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-family: 'FontAwesome';
+}
+input.search::-ms-input-placeholder { /* Microsoft Edge */
+   font-family: 'FontAwesome';
+}
+
+.profile-icon.fa  {
+    font-size: 1em;
+}
