@@ -19,3 +19,16 @@ input.search::-ms-input-placeholder { /* Microsoft Edge */
 .profile-icon.fa  {
     font-size: 1em;
 }
+
+.send-button, div.rating {
+    margin: 1em 0em 1em 1em;
+}
+
+div.rating > .fa {
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.user-bio {
+    margin: 1em 0px;
+}
