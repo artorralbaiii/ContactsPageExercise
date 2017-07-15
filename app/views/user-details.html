@@ -10,7 +10,8 @@
         </div>
         <div class="row">
             <div class="col-md-12 rating text-center">
-                <i data-ng-repeat="item in vm.ratingCount track by $index;"  data-ng-class="{'fa-heart' : $index < vm.selectedUser.rating, 'fa-heart-o' : $index >= vm.selectedUser.rating}" class="fa " aria-hidden="true"></i>
+                <i data-ng-repeat="item in vm.ratingCount track by $index;" data-ng-class="{'fa-heart' : $index < vm.selectedUser.rating, 'fa-heart-o' : $index >= vm.selectedUser.rating}"
+                    class="fa " aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -24,7 +25,7 @@
 
 <div class="row">
     <div class="col-md-9">
-        <div class="table-responsive">
+        <div class="table-responsive table-wrapper">
             <table class="table table-striped">
                 <thead>
                     <th>Likes</th>

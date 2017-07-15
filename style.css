@@ -21,12 +21,11 @@ input.search::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .send-button, div.rating {
-    margin: 1em 0em 1em 1em;
+    margin: 1em 0em;
 }
 
 div.rating > .fa {
     font-size: 4em;
-    cursor: pointer;
 }
 
 .user-bio {
@@ -35,4 +34,8 @@ div.rating > .fa {
 
 .list-group > .list-group-item {
     cursor: pointer;
+}
+
+.table-wrapper {
+    margin: 1em 0px;
 }
