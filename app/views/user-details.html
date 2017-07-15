@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-3 text-center">
-        <img class="img-circle" src="http://www.fillmurray.com/200/200" alt="user picture">
+        <img class="img-circle" src="{{vm.selectedUser.img}}" alt="user picture">
     </div>
     <div class="col-md-6">
         <div class="row">
@@ -10,11 +10,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 rating text-center">
-                <i class="fa fa-heart" aria-hidden="true"></i>
-                <i class="fa fa-heart" aria-hidden="true"></i>
-                <i class="fa fa-heart" aria-hidden="true"></i>
-                <i class="fa fa-heart" aria-hidden="true"></i>
-                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i data-ng-repeat="item in vm.ratingCount track by $index;"  data-ng-class="{'fa-heart' : $index < vm.selectedUser.rating, 'fa-heart-o' : $index >= vm.selectedUser.rating}" class="fa " aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -22,9 +18,7 @@
 
 <div class="row">
     <div class="col-md-9">
-        <p class="user-bio text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quas, incidunt aliquid quidem veniam dolores atque magnam provident vitae facere doloribus accusamus quia, blanditiis quaerat quam deleniti sunt, omnis a.</span>
-            <span>Veritatis tempora dolor officia molestiae ea aliquam deserunt modi sed, quisquam suscipit debitis labore nemo aspernatur veniam exercitationem quibusdam laudantium corporis quaerat totam, fugiat ex! Omnis fuga eius accusamus neque.</span>
-            <span>Excepturi quod quidem fugit quaerat iusto quo nostrum libero voluptatibus veritatis eaque, reprehenderit eius fuga aperiam sint repellat iure, esse consectetur nulla. Ad architecto delectus autem, numquam molestiae eius eaque.</span></p>
+        <p class="user-bio text-justify">{{ vm.selectedUser.Description }}</p>
     </div>
 </div>
 
@@ -37,17 +31,9 @@
                     <th>Dislikes</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Dogs</td>
-                        <td>Birds</td>
-                    </tr>
-                    <tr>
-                        <td>Long Walks on the beach</td>
-                        <td>Red Things</td>
-                    </tr>
-                    <tr>
-                        <td>Long Walks on the beach</td>
-                        <td>Red Things</td>
+                    <tr data-ng-repeat="item in vm.getCount(vm.selectedUser) track by $index;">
+                        <td>{{ vm.getArrayItem(vm.selectedUser.Likes, $index) }}</td>
+                        <td>{{ vm.getArrayItem(vm.selectedUser.Dislikes, $index) }}</td>
                     </tr>
                 </tbody>
             </table>

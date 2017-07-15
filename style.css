@@ -32,3 +32,7 @@ div.rating > .fa {
 .user-bio {
     margin: 1em 0px;
 }
+
+.list-group > .list-group-item {
+    cursor: pointer;
+}
