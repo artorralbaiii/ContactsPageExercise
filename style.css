@@ -16,6 +16,15 @@ input.search::-ms-input-placeholder { /* Microsoft Edge */
    font-family: 'FontAwesome';
 }
 
+.navbar-nav>li>a.profile-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav>li>a {
+    padding-bottom: 1px;
+}
+
 .profile-icon.fa  {
     font-size: 1em;
 }

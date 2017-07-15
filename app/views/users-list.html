@@ -1,4 +1,4 @@
 <div class="list-group">
-    <p class="list-group-item list-group-item-default lead"><i class="fa fa-users" aria-hidden="true"></i> People</p>
+    <p class="list-group-item list-group-item-default lead"><i class="fa fa-users" aria-hidden="true"></i> Contacts</p>
     <a data-ng-click="vm.selectUser(user, $index);" data-ng-repeat="user in vm.users track by $index" data-ng-class="{'active' : $index===vm.selectedIndex}" class="list-group-item">{{user.name }}</a>
 </div>
